@@ -6,21 +6,35 @@
     <meta name="keywords" content="Resume,Roman,cv ">
     <meta name="description" content="Этот сайт - резюме Романа">
     <title>Roman Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div class="container">
+<div class="Info">
     <h1>Федоров Роман</h1>
-    <img src="Аватарка.jpg" width="250" alt="Тут фотография Романа">
-    <p>Я <strong>музыкант</strong>, пишу песни,<strong>пою</strong> и <strong>играю на гитаре</strong></p>
-    <p>Я люблю <em>читать, путешествовать и программировать</em></p>
-    <h4>Список моих социальных сетей</h4>
-    <a href="https://vk.com/idromen3o" target="_blank">Вконтакте</a>
-    <h2>Мои хобби</h2>
-    <ul><li>Вокал</li>
+    
+        
+     <img src="Аватарка.jpg" alt="Тут фотография Романа" class="avatarka"> 
+    
+        <div class="info-text">
+     <p>Я <strong>музыкант</strong>, пишу песни,<strong>пою</strong> и <strong>играю на гитаре</strong></p>
+     <p>Я люблю <em>читать, путешествовать и программировать</em></p>
+     <h4>Список моих социальных сетей</h4>
+     <a href="https://vk.com/idromen3o" target="_blank">Вконтакте</a>
+     <div class="card bg-green">
+     <h2>Мои хобби</h2>
+     <ul class="list">
+        <li>Вокал</li>
         <li>Игра на гитаре</li>
         <li>Написание песен</li>
-    </ul>
-    <h2>Опыт Работы</h2>
-    <table>
+     </div>
+     </div>
+     </div>
+     </ul>
+     <div class="card bg-red">
+      <h2>Опыт Работы</h2>
+     <table class="table">
         <thead>
             <tr>
            <th>Название</th> 
@@ -44,27 +58,37 @@
                 <td>Бариста-Кассир</td>
                 <td>2023-сейчас</td>
              </tr>
+            
         </tbody>
-    </table>
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
+     </table>
+  </div>
+  <div class="card bg-blue">
+    
+    <form class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+
+            
+        <div class="form-group">
         <label for="text">Введите Имя</label>
         <input type="text" id="text" placeholder="Введите Имя">
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="email">Введите Email</label>
         <input type="email" id="email" placeholder="Введите Email">
+       </div>
     </div>
     
-    <div>
+    <div class="form-group">
         <label for="massage">Ваше сообщение</label>
         <br>
         <textarea name="massage" id="massage" cols="15" rows="5" placeholder="Ваше сообщение"></textarea>
     </div>
-<input type="submit" value="Отправить!">
+  <input class="btn" type="submit" value="Отправить!">
     </form>
-
-</body>
-</html>
+   </div>
+  </div>
+  </body>
+  </html>
